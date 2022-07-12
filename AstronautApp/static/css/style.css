@@ -1,0 +1,65 @@
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2016/09/08/12/00/stars-1654074_960_720.jpg");
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.astronauts-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.astronauts-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 20%;
+    position: sticky;
+}
+
+.astronauts-div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    justify-content: flex-start;
+    width: 60%;
+    height: 80%;
+    position: sticky;
+    top: 20%;   
+}
+
+/* Names appear with a background */
+.astronauts-name {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.2em;
+    font-weight: 200;
+    text-align: center;
+    width: 30%;
+    height: 10%;
+    background-color: rgba(71, 71, 71, 0.5);
+}
+
+.astronauts-name:hover {
+    background-color: rgba(214, 27, 27, 0.8);
+}
