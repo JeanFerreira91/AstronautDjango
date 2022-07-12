@@ -1,5 +1,7 @@
 # Django Astronauts Tracker
 
+![Project image](./AstronautApp/static/images/github-image.png)
+
 ## Installation:
 
 1- Clone this repository in your desired path:
