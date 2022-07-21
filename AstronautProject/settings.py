@@ -38,7 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'AstronautApp',
+    'django_idom',
+    'channels',
 ]
+
+ASGI_APPLICATION = "AstronautProject.asgi.application"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -122,3 +126,16 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# If "idom" cache is not configured, then we'll use "default" instead
+# CACHES = {
+# "idom": {"BACKEND": ...},
+# }
+
+# Maximum seconds between two reconnection attempts that would cause the client give up.
+# 0 will disable reconnection.
+IDOM_WS_MAX_RECONNECT_TIMEOUT = 604800
+
+# The URL for IDOM to serve websockets
+IDOM_WEBSOCKET_URL = "idom/"

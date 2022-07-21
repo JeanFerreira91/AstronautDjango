@@ -21,4 +21,5 @@ from AstronautApp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('AstronautApp.urls')),
+    path('idom/', include('django_idom.http.urls')),
 ]

@@ -14,3 +14,9 @@ def index(request):
     }
     pprint(data)
     return render(request, 'AstronautApp/index.html', context)
+
+def index2(request):
+    return render(request, 'AstronautApp/idom-template.html')
+
+def index3(request):
+    return render(request, 'AstronautApp/slider-component.html')
